@@ -18,11 +18,15 @@ function number(busStops){
 }
 
 function ballCollector(detritus) {
-
-}
-
-function countDevelopers(list) {
-
+  return detritus.reduce(
+    (tennisBalls, weightOfItem) => {
+      if (weightOfItem === 58) {
+        tennisBalls.weight += weightOfItem
+      }
+      return tennisBalls
+    },
+    { weight: 0 }
+  )
 }
 
 function XO(str) {
