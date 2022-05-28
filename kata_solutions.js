@@ -29,8 +29,16 @@ function ballCollector(detritus) {
   )
 }
 
-function XO(str) {
-  
+function countDevelopers(list) {
+  return list.reduce((developerCount, developer) => {
+    if (
+      developer.language === "JavaScript" &&
+      developer.continent === "Europe"
+    ) {
+      developerCount++
+    }
+    return developerCount
+  }, 0)
 }
 
 var splitInParts = function (s, partLength) {

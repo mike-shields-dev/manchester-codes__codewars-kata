@@ -101,13 +101,13 @@ describe("countDevelopers", () => {
     },
   ]
 
-    xit("should return the total count of JavaScript developers from Europe", () => {
-      try {
-        expect(countDevelopers(list1)).toEqual(1)
-      } catch (e) {
-        console.error("Noah is the only JavaScript developer from Europe")
-      }
-    })
+  it("should return the total count of JavaScript developers from Europe", () => {
+    try {
+      expect(countDevelopers(list1)).toEqual(1)
+    } catch (e) {
+      console.error("Noah is the only JavaScript developer from Europe")
+    }
+  })
 
   const list2 = [
     {
@@ -128,7 +128,7 @@ describe("countDevelopers", () => {
     },
   ]
 
-  xit("should not find HTML developers from Europe", () => {
+  it("should not find HTML developers from Europe", () => {
     try {
       expect(countDevelopers(list2)).toEqual(0)
     } catch (e) {
