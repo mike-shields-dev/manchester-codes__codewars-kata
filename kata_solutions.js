@@ -51,13 +51,22 @@ function XO(str) {
   return xCount === oCount
 }
 
+var splitInParts = function (s, partLength) {
+  const sToArray = [...s]
+  const partsArray = []
+  while (sToArray.length) {
+    partsArray.push(sToArray.splice(0, partLength).join(""))
+  }
+  return partsArray.join(" ")
+}
+
 module.exports = {
   monkeyCount,
   maps,
   removeChar,
-  number, 
+  number,
   ballCollector,
   countDevelopers,
-  XO, 
+  XO,
   splitInParts,
 }

@@ -48,10 +48,26 @@ describe("number", () => {
         [5, 8],
       ])
     ).toEqual(5)
-    expect(number([[3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10]])).toEqual(
-      17
-    )
-    expect(number([[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]])).toEqual(21)
+    expect(
+      number([
+        [3, 0],
+        [9, 1],
+        [4, 10],
+        [12, 2],
+        [6, 1],
+        [7, 10],
+      ])
+    ).toEqual(17)
+    expect(
+      number([
+        [3, 0],
+        [9, 1],
+        [4, 8],
+        [12, 2],
+        [6, 1],
+        [7, 8],
+      ])
+    ).toEqual(21)
     expect(number([[0, 0]])).toEqual(0)
   })
 })
@@ -140,12 +156,13 @@ describe("countDevelopers", () => {
 describe("XO", () => {
   it("should return a boolean indicating that the string has the same number of x's and o's", () => {
     expect(XO("xo")).toBe(true)
-    expect(XO("xxOo")).toBe(false)
+    expect(XO("xxOo")).toBe(true)
     expect(XO("xxxm")).toBe(false)
     expect(XO("Oo")).toBe(false)
     expect(XO("ooom")).toBe(false)
   })
 })
+
 
 describe("splitInParts", () => {
   it("should return the original string with spaces inserted between each set of characters with a length defined by 'partLength'", () => {
