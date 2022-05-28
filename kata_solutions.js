@@ -3,7 +3,7 @@ function monkeyCount(n) {
 }
 
 function maps(x) {
-
+  return x.map((n) => n * 2)
 }
 
 function removeChar(str) {
