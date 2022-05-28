@@ -29,13 +29,13 @@ describe("maps", () => {
   })
 })
 
-describe("removeCharacters", () => {
-  xit("should return a string with the first and last characters removed", () => {
-    expect(removeCharacters("eloquent")).toEqual("loquen")
-    expect(removeCharacters("country")).toEqual("ountr")
-    expect(removeCharacters("person")).toEqual("erso")
-    expect(removeCharacters("place")).toEqual("lac")
-    expect(removeCharacters("ooopsss")).toEqual("oopss")
+describe("removeChar", () => {
+  it("should return a string with the first and last characters removed", () => {
+    expect(removeChar("eloquent")).toEqual("loquen")
+    expect(removeChar("country")).toEqual("ountr")
+    expect(removeChar("person")).toEqual("erso")
+    expect(removeChar("place")).toEqual("lac")
+    expect(removeChar("ooopsss")).toEqual("oopss")
   })
 })
 

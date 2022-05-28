@@ -6,7 +6,9 @@ function maps(x) {
   return x.map((n) => n * 2)
 }
 
-function removeChar(str) {
+function removeChar(str){
+  return str.slice(1, -1)
+};
 
 }
 
