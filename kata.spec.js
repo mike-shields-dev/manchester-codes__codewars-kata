@@ -32,3 +32,12 @@ describe("removeCharacters", () => {
     expect(removeCharacters("ooopsss")).toEqual("oopss")
   })
 })
+
+describe("number", () => {
+  it("should return the total of adding the 0th and subtracting the 1st elements in each sub array", () => {
+    expect(number([[10, 0], [3, 5], [5, 18]])).toEqual(5)
+    expect(number([3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10])).toEqual(17)
+    expect(number([3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8])).toEqual(21)
+    expect(number([0, 0])).toEqual(0)
+  })
+})
