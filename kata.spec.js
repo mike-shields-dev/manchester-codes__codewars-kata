@@ -1,4 +1,13 @@
-const { monkeyCount, maps } = require("./kata_solutions.js")
+const {
+  monkeyCount,
+  maps,
+  removeChar,
+  number,
+  ballCollector,
+  countDevelopers,
+  XO,
+  splitInParts,
+} = require("./kata_solutions.js")
 
 describe("monkeyCount", () => {
   xit("should return an array of numbers from 1 to n", () => {
