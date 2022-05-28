@@ -41,3 +41,13 @@ describe("number", () => {
     expect(number([0, 0])).toEqual(0)
   })
 })
+
+describe("ballCollector", () => {
+  it("Should return the total of all occurences of the value 58 in the array", () => {
+    expect(ballCollector(58, 68, 62, 69, 58)).toEqual({weight: 116})
+    expect(ballCollector(60, 66, 71, 68, 62)).toEqual({weight: 0})
+    expect(ballCollector(58)).toEqual({weight: 58})
+    expect(ballCollector(58, 58, 58)).toEqual({weight: 174})
+  })
+})
+
