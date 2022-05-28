@@ -41,8 +41,14 @@ function countDevelopers(list) {
   }, 0)
 }
 
-var splitInParts = function (s, partLength) {
+function XO(str) {
+  let xCount = oCount = 0
 
+  for (const char of str.toLowerCase()) {
+    char === "x" && xCount++
+    char === "o" && oCount++
+  }
+  return xCount === oCount
 }
 
 module.exports = {

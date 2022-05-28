@@ -138,9 +138,9 @@ describe("countDevelopers", () => {
 })
 
 describe("XO", () => {
-  xit("should return a boolean indicating that the string has the same number of x's and o's", () => {
+  it("should return a boolean indicating that the string has the same number of x's and o's", () => {
     expect(XO("xo")).toBe(true)
-    expect(XO("xxOo")).toBe(true)
+    expect(XO("xxOo")).toBe(false)
     expect(XO("xxxm")).toBe(false)
     expect(XO("Oo")).toBe(false)
     expect(XO("ooom")).toBe(false)
