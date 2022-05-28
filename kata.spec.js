@@ -1,7 +1,7 @@
 const { monkeyCount, maps } = require("./kata_solutions.js")
 
 describe("monkeyCount", () => {
-  it("should return an array of numbers from 1 to n", () => {
+  xit("should return an array of numbers from 1 to n", () => {
     expect(monkeyCount(5)).toEqual([1, 2, 3, 4, 5])
     expect(monkeyCount(3)).toEqual([1, 2, 3])
     expect(monkeyCount(9)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -13,7 +13,7 @@ describe("monkeyCount", () => {
 })
 
 describe("maps", () => {
-  it("should return the original array with the values doubled", () => {
+  xit("should return the original array with the values doubled", () => {
     expect(maps([1, 2, 3])).toEqual([2, 4, 6])
     expect(maps([4, 1, 1, 1, 4])).toEqual([8, 2, 2, 2, 8])
     expect(maps([2, 2, 2, 2, 2, 2])).toEqual([4, 4, 4, 4, 4, 4])
@@ -21,7 +21,7 @@ describe("maps", () => {
 })
 
 describe("removeCharacters", () => {
-  it("should return a string with the first and last characters removed", () => {
+  xit("should return a string with the first and last characters removed", () => {
     expect(removeCharacters("eloquent")).toEqual("loquen")
     expect(removeCharacters("country")).toEqual("ountr")
     expect(removeCharacters("person")).toEqual("erso")
@@ -31,7 +31,7 @@ describe("removeCharacters", () => {
 })
 
 describe("number", () => {
-  it("should return the total of adding the 0th and subtracting the 1st elements in each sub array", () => {
+  xit("should return the total of adding the 0th and subtracting the 1st elements in each sub array", () => {
     expect(
       number([
         [10, 0],
@@ -48,7 +48,7 @@ describe("number", () => {
 })
 
 describe("ballCollector", () => {
-  it("Should return the total of all occurences of the value 58 in the array", () => {
+  xit("Should return the total of all occurences of the value 58 in the array", () => {
     expect(ballCollector(58, 68, 62, 69, 58)).toEqual({ weight: 116 })
     expect(ballCollector(60, 66, 71, 68, 62)).toEqual({ weight: 0 })
     expect(ballCollector(58)).toEqual({ weight: 58 })
@@ -92,7 +92,7 @@ describe("countDevelopers", () => {
     },
   ]
 
-    it("should return the total count of JavaScript developers from Europe", () => {
+    xit("should return the total count of JavaScript developers from Europe", () => {
       try {
         expect(countDevelopers(list1)).toEqual(1)
       } catch (e) {
@@ -119,7 +119,7 @@ describe("countDevelopers", () => {
     },
   ]
 
-  it("should not find HTML developers from Europe", () => {
+  xit("should not find HTML developers from Europe", () => {
     try {
       expect(countDevelopers(list2)).toEqual(0)
     } catch (e) {
@@ -129,7 +129,7 @@ describe("countDevelopers", () => {
 })
 
 describe("XO", () => {
-  it("should return a boolean indicating that the string has the same number of x's and o's", () => {
+  xit("should return a boolean indicating that the string has the same number of x's and o's", () => {
     expect(XO("xo")).toBe(true)
     expect(XO("xxOo")).toBe(false)
     expect(XO("xxxm")).toBe(false)
