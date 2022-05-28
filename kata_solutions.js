@@ -1,5 +1,5 @@
 function monkeyCount(n) {
-
+  return [...new Array(n)].map((_, i) => i + 1)
 }
 
 function maps(x) {
