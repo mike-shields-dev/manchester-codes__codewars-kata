@@ -40,7 +40,7 @@ describe("removeChar", () => {
 })
 
 describe("number", () => {
-  xit("should return the total of adding the 0th and subtracting the 1st elements in each sub array", () => {
+  it("should return the total of adding the 0th and subtracting the 1st elements in each sub array", () => {
     expect(
       number([
         [10, 0],

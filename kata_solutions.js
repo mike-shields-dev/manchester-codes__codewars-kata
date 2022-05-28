@@ -10,10 +10,11 @@ function removeChar(str){
   return str.slice(1, -1)
 };
 
-}
-
-function number(busStops) {
-
+function number(busStops){
+  return busStops.reduce((onTheBus, busStop) => {
+    const [boarders, alighters] = busStop
+    return onTheBus + boarders - alighters
+  }, 0)
 }
 
 function ballCollector(detritus) {
