@@ -146,3 +146,13 @@ describe("XO", () => {
     expect(XO("ooom")).toBe(false)
   })
 })
+
+describe("splitInParts", () => {
+  it("should return the original string with spaces inserted between each set of characters with a length defined by 'partLength'", () => {
+    expect(splitInParts("supercalifragilisticexpialidocious", 3)).toEqual(
+      "sup erc ali fra gil ist ice xpi ali doc iou s"
+    )
+    expect(splitInParts("HelloKata", 1)).toEqual("H e l l o K a t a")
+    expect(splitInParts("HelloKata", 9)).toEqual("HelloKata")
+  })
+})
